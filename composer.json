@@ -1,14 +1,17 @@
 {
-    "name": "fabricity/package2",
+    "name": "fabricity/package1",
     "description": "test package",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Fabricity\\Package2\\": "src/"
+            "Fabricity\\Package1\\": "src/"
         }
     },
     "require": {
         "php": "^7.4"
+    },
+    "conflict": {
+        "fabricity/package2": "<1.0.1"
     }
 }
